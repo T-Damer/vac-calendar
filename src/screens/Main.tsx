@@ -11,6 +11,7 @@ export default function () {
   return (
     <div>
       <h1>📆 Vaccination calendar</h1>
+      <search>Implement search by hiding unmatching elements</search>
       <div className="flex flex-wrap" ref={parentRef}>
         {Object.entries(patients).map(([name, birthDate], index) => (
           <PatientCard name={name} birthDate={birthDate} key={index} />
