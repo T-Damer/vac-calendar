@@ -11,7 +11,7 @@ export default function ({ name, birthDate }: PatientData) {
   return (
     <Card onPress={onPress}>
       <div className="flex flex-col justify-center">
-        <span className="font-bold">{name}</span>
+        <span className="font-bold truncate-2">{name}</span>
         <span>{new Date(birthDate).toLocaleDateString()}</span>
       </div>
     </Card>

@@ -8,13 +8,17 @@ export default function ({ name }: { name: string }) {
   const calendar = calculateDates(birthDate)
 
   return (
-    <div>
-      <p onClick={() => navigate('/')} className="cursor-pointer">
-        Go back
-      </p>
-      <p>{name}</p>
-      <p>{new Date(birthDate).toLocaleDateString()}</p>
-      <p>Masles - {calendar.masles}</p>
+    <div className="flex flex-col gap-2">
+      <a
+        onClick={() => navigate('/')}
+        className="cursor-pointer hover:text-white transition-colors"
+      >
+        ◄ Go back
+      </a>
+      <span>Name: {name}</span>
+      <span>Birth date: {new Date(birthDate).toLocaleDateString()}</span>
+      <span>Age: {}</span>
+      <span>Masles - {calendar.masles}</span>
     </div>
   )
 }

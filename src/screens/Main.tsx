@@ -10,7 +10,7 @@ export default function () {
 
   return (
     <div>
-      <h1>Vaccination calendar</h1>
+      <h1>📆 Vaccination calendar</h1>
       <div className="flex flex-wrap" ref={parentRef}>
         {Object.entries(patients).map(([name, birthDate], index) => (
           <PatientCard name={name} birthDate={birthDate} key={index} />
