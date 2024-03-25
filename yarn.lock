@@ -437,6 +437,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.23.9":
+  version: 7.24.1
+  resolution: "@babel/runtime@npm:7.24.1"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/500c6a99ddd84f37c7bc5dbc84777af47b1372b20e879941670451d55484faf18a673c5ebee9ca2b0f36208a729417873b35b1b92e76f811620f6adf7b8cb0f1
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.22.15":
   version: 7.22.15
   resolution: "@babel/template@npm:7.22.15"
@@ -729,6 +738,13 @@ __metadata:
   version: 8.57.0
   resolution: "@eslint/js@npm:8.57.0"
   checksum: 10c0/9a518bb8625ba3350613903a6d8c622352ab0c6557a59fe6ff6178bf882bf57123f9d92aa826ee8ac3ee74b9c6203fe630e9ee00efb03d753962dcf65ee4bd94
+  languageName: node
+  linkType: hard
+
+"@formkit/auto-animate@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "@formkit/auto-animate@npm:0.8.1"
+  checksum: 10c0/78dea83222f974e57028136ec4e894f74f729f7dd343504aa85c8562647952d1576a031fa5d16a603371206f23386997952345707f4242f3891f0cbf87509e19
   languageName: node
   linkType: hard
 
@@ -2112,14 +2128,14 @@ __metadata:
   linkType: hard
 
 "daisyui@npm:^4.7.3":
-  version: 4.7.3
-  resolution: "daisyui@npm:4.7.3"
+  version: 4.8.0
+  resolution: "daisyui@npm:4.8.0"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: 10c0/86d80859f2beed87a9954622e6256fd4105e0b03a3033f9d174d14bbee496561ae661677fc24d3a963aba8f1293f74eb198b5831155f016737b0803f0fbfd209
+  checksum: 10c0/aa3f6ef349af87c724f267f799db278f16d08ca6514206d5a10ef45f8ed5c0d94e50e96e9f315264a842dfa72fed7b38a675935a245d90b57c6f973fd60ee968
   languageName: node
   linkType: hard
 
@@ -3133,40 +3149,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"frontend-starter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "frontend-starter@workspace:."
-  dependencies:
-    "@preact/preset-vite": "npm:^2.8.1"
-    "@tailwindcss/typography": "npm:^0.5.10"
-    "@types/node": "npm:^20.11.25"
-    "@typescript-eslint/eslint-plugin": "npm:^7.1.1"
-    "@typescript-eslint/parser": "npm:^7.1.1"
-    "@vitejs/plugin-react": "npm:^4.2.1"
-    autoprefixer: "npm:^10.4.18"
-    cross-env: "npm:^7.0.3"
-    daisyui: "npm:^4.7.3"
-    eslint: "npm:^8.57.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-no-relative-import-paths: "npm:^1.5.3"
-    eslint-plugin-prettier: "npm:^5.1.3"
-    eslint-plugin-react: "npm:^7.34.0"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-sort-imports-es6-autofix: "npm:^0.6.0"
-    jotai: "npm:^2.7.0"
-    postcss: "npm:^8.4.35"
-    preact: "npm:^10.19.6"
-    prettier: "npm:^3.2.5"
-    rollup-plugin-visualizer: "npm:^5.12.0"
-    tailwindcss: "npm:^3.4.1"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:^5.4.2"
-    vite: "npm:^5.1.5"
-    vite-tsconfig-paths: "npm:^4.3.1"
-  languageName: unknown
-  linkType: soft
-
 "fs-minipass@npm:^2.0.0":
   version: 2.1.0
   resolution: "fs-minipass@npm:2.1.0"
@@ -3624,6 +3606,15 @@ __metadata:
   bin:
     he: bin/he
   checksum: 10c0/a27d478befe3c8192f006cdd0639a66798979dfa6e2125c6ac582a19a5ebfec62ad83e8382e6036170d873f46e4536a7e795bf8b95bf7c247f4cc0825ccc8c17
+  languageName: node
+  linkType: hard
+
+"html-parse-stringify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-parse-stringify@npm:3.0.1"
+  dependencies:
+    void-elements: "npm:3.1.0"
+  checksum: 10c0/159292753d48b84d216d61121054ae5a33466b3db5b446e2ffc093ac077a411a99ce6cbe0d18e55b87cf25fa3c5a86c4d8b130b9719ec9b66623259000c72c15
   languageName: node
   linkType: hard
 
@@ -4168,8 +4159,8 @@ __metadata:
   linkType: hard
 
 "jotai@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "jotai@npm:2.7.0"
+  version: 2.7.1
+  resolution: "jotai@npm:2.7.1"
   peerDependencies:
     "@types/react": ">=17.0.0"
     react: ">=17.0.0"
@@ -4178,7 +4169,7 @@ __metadata:
       optional: true
     react:
       optional: true
-  checksum: 10c0/9f753ab76070d4bd284822f7cbffce4e36632f190be63758c8bca7c69a953d5e2a1d8d7124ab8c11d5745ba639fb0a1a28ec1e565d8e446ff83c81efed5ca39f
+  checksum: 10c0/7146023b77e32257e120e3a9f3f29ab3972f6ee2146e3c843cc43dc75aaa200c8e3d2513bb6a358755057a23ba716d6b74d56dbcd9d97416d8adf3d50545b096
   languageName: node
   linkType: hard
 
@@ -4525,6 +4516,13 @@ __metadata:
     minipass: "npm:^3.0.0"
     yallist: "npm:^4.0.0"
   checksum: 10c0/64fae024e1a7d0346a1102bb670085b17b7f95bf6cfdf5b128772ec8faf9ea211464ea4add406a3a6384a7d87a0cd1a96263692134323477b4fb43659a6cab78
+  languageName: node
+  linkType: hard
+
+"mitt@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "mitt@npm:3.0.1"
+  checksum: 10c0/3ab4fdecf3be8c5255536faa07064d05caa3dd332bd318ff02e04621f7b3069ca1de9106cfe8e7ced675abfc2bec2ce4c4ef321c4a1bb1fb29df8ae090741913
   languageName: node
   linkType: hard
 
@@ -5142,6 +5140,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-i18next@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "react-i18next@npm:14.1.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.9"
+    html-parse-stringify: "npm:^3.0.1"
+  peerDependencies:
+    i18next: ">= 23.2.3"
+    react: ">= 16.8.0"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 10c0/d3e2d1e5183068a7a23f2fefc432d61546baef0afef176929a1a7b33489e5b3a2a892745a4424327c4bd3ab02ee3a6a4e450b57c2598393032a1efdbe57f8841
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -5200,6 +5216,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"regenerator-runtime@npm:^0.14.0":
+  version: 0.14.1
+  resolution: "regenerator-runtime@npm:0.14.1"
+  checksum: 10c0/1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
+  languageName: node
+  linkType: hard
+
 "regexp.prototype.flags@npm:^1.5.0":
   version: 1.5.0
   resolution: "regexp.prototype.flags@npm:1.5.0"
@@ -5231,6 +5254,13 @@ __metadata:
     es-errors: "npm:^1.3.0"
     set-function-name: "npm:^2.0.1"
   checksum: 10c0/0f3fc4f580d9c349f8b560b012725eb9c002f36daa0041b3fbf6f4238cb05932191a4d7d5db3b5e2caa336d5150ad0402ed2be81f711f9308fe7e1a9bf9bd552
+  languageName: node
+  linkType: hard
+
+"regexparam@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "regexparam@npm:3.0.0"
+  checksum: 10c0/a6430d7b97d5a7d5518f37a850b6b73aab479029d02f46af4fa0e8e4a1d7aad05b7a0d2d10c86ded21a14d5f0fa4c68525f873a5fca2efeefcccd93c36627459
   languageName: node
   linkType: hard
 
@@ -6270,6 +6300,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vac-calendar@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "vac-calendar@workspace:."
+  dependencies:
+    "@formkit/auto-animate": "npm:^0.8.1"
+    "@preact/preset-vite": "npm:^2.8.1"
+    "@tailwindcss/typography": "npm:^0.5.10"
+    "@types/node": "npm:^20.11.25"
+    "@typescript-eslint/eslint-plugin": "npm:^7.1.1"
+    "@typescript-eslint/parser": "npm:^7.1.1"
+    "@vitejs/plugin-react": "npm:^4.2.1"
+    autoprefixer: "npm:^10.4.18"
+    cross-env: "npm:^7.0.3"
+    daisyui: "npm:^4.7.3"
+    eslint: "npm:^8.57.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-import: "npm:^2.29.1"
+    eslint-plugin-no-relative-import-paths: "npm:^1.5.3"
+    eslint-plugin-prettier: "npm:^5.1.3"
+    eslint-plugin-react: "npm:^7.34.0"
+    eslint-plugin-react-hooks: "npm:^4.6.0"
+    eslint-plugin-sort-imports-es6-autofix: "npm:^0.6.0"
+    jotai: "npm:^2.7.0"
+    postcss: "npm:^8.4.35"
+    preact: "npm:^10.19.6"
+    prettier: "npm:^3.2.5"
+    react-i18next: "npm:^14.1.0"
+    rollup-plugin-visualizer: "npm:^5.12.0"
+    tailwindcss: "npm:^3.4.1"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:^5.4.2"
+    vite: "npm:^5.1.5"
+    vite-tsconfig-paths: "npm:^4.3.1"
+    wouter-preact: "npm:^3.1.1"
+  languageName: unknown
+  linkType: soft
+
 "vite-tsconfig-paths@npm:^4.3.1":
   version: 4.3.1
   resolution: "vite-tsconfig-paths@npm:4.3.1"
@@ -6323,6 +6390,13 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/29be99ba0bec5e3ad50290510ba764b6c1016979a1ba70cf2071be9f1338f27e582a120836222e1fad6efb01c886a8fb57cb33471fadd0fceaa922bfc92bbbf7
+  languageName: node
+  linkType: hard
+
+"void-elements@npm:3.1.0":
+  version: 3.1.0
+  resolution: "void-elements@npm:3.1.0"
+  checksum: 10c0/0b8686f9f9aa44012e9bd5eabf287ae0cde409b9a2854c5a2335cb83920c957668ac5876e3f0d158dd424744ac411a7270e64128556b451ed3bec875ef18534d
   languageName: node
   linkType: hard
 
@@ -6427,6 +6501,18 @@ __metadata:
   dependencies:
     string-width: "npm:^1.0.2 || 2 || 3 || 4"
   checksum: 10c0/1d9c2a3e36dfb09832f38e2e699c367ef190f96b82c71f809bc0822c306f5379df87bab47bed27ea99106d86447e50eb972d3c516c2f95782807a9d082fbea95
+  languageName: node
+  linkType: hard
+
+"wouter-preact@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "wouter-preact@npm:3.1.1"
+  dependencies:
+    mitt: "npm:^3.0.1"
+    regexparam: "npm:^3.0.0"
+  peerDependencies:
+    preact: ^10.0.0
+  checksum: 10c0/06733cbe6422b2fc3a1e5aef5a68f614cea0bddeeac5b34d1cf172ecca0cf014ff9fe004d83a6735a236fec87b644f6388233cd9d69c0b2709e70897760e5346
   languageName: node
   linkType: hard
 
