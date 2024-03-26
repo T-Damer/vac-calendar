@@ -14,3 +14,15 @@ body {
   overflow: hidden;
   display: -webkit-box;
 }
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+  border-width: 0;
+}

@@ -1,10 +1,12 @@
 import { useAtom } from 'jotai'
-import { useCallback, useMemo, useState } from 'preact/hooks'
+import { useCallback, useMemo, useRef, useState } from 'preact/hooks'
+import CalendarIcon from 'components/CalendarIcon'
 import Card from 'components/Card'
 import HumanIcon from 'components/HumanIcon'
 import nameToBirthDateStorage from 'atoms/nameToBirthDateStorage'
 
 function AddPatientForm() {
+  const dateInputRef = useRef<HTMLInputElement | null>(null)
   const [fullName, setFullName] = useState('')
   const [birthDate, setBirthDate] = useState('')
   const [patientsData, setPatientsData] = useAtom(nameToBirthDateStorage)
@@ -44,13 +46,18 @@ function AddPatientForm() {
         />
         <HumanIcon />
       </label>
-      <input
-        className="input"
-        value={birthDate}
-        onChange={(e) => setBirthDate(e.currentTarget.value)}
-        type="date"
-        required
-      />
+      <label className="input input-bordered flex items-center gap-2">
+        <input
+          className="grow"
+          value={birthDate}
+          onChange={(e) => setBirthDate(e.currentTarget.value)}
+          type="date"
+          placeholder="dd.mm.yyyy"
+          ref={dateInputRef}
+          required
+        />
+        <CalendarIcon onPress={() => dateInputRef.current?.showPicker()} />
+      </label>
       <div className="flex w-full items-center justify-between">
         <button
           className="btn transition-all disabled:opacity-70 hover:bg-red-300 border-0 w-28"
