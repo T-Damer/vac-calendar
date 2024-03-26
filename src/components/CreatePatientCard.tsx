@@ -61,7 +61,7 @@ function AddPatientForm() {
         </button>
 
         <button
-          className="btn w-28 tranistion-all disabled:opacity-70 enabled:bg-green-700 enabled:border-0 enabled:text-white hover:enabled:bg-green-500"
+          className="btn w-28 transition-all disabled:opacity-70 enabled:bg-green-700 enabled:border-0 enabled:text-white hover:enabled:bg-green-500"
           onClick={onSubmit}
           disabled={disabled}
         >
