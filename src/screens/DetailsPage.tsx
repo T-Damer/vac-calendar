@@ -16,7 +16,7 @@ export default function ({ name }: { name: string }) {
     <div className="flex flex-col gap-x-2">
       <a
         onClick={() => navigate('/')}
-        className="cursor-pointer hover:text-white transition-colors"
+        className="cursor-pointer hover:opacity-50 transition-opacity"
       >
         ◄ Go back
       </a>
