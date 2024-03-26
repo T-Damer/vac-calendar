@@ -21,12 +21,6 @@ input[type='date']::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
-textarea:focus,
-input:focus {
-  outline: 0;
-  border-width: 0;
-}
-
 @media not (any-hover: hover) {
   input[type='date']:before {
     content: attr(placeholder);
