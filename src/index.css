@@ -27,11 +27,13 @@ input:focus {
   border-width: 0;
 }
 
-input[type='date']:before {
-  content: attr(placeholder);
-  color: #aaa;
-}
-input[type='date']:focus:before,
-input[type='date']:valid:before {
-  content: '';
+@media not (any-hover: hover) {
+  input[type='date']:before {
+    content: attr(placeholder);
+    color: #aaa;
+  }
+  input[type='date']:focus:before,
+  input[type='date']:valid:before {
+    content: '';
+  }
 }
