@@ -23,8 +23,18 @@ export default function ({ name }: { name: string }) {
       <img src="https://www.endocrincentr.ru/sites/default/files/all/pacientam/kalendar_profilakticheskih_privivok/nacionalniy_kalendar_profilakticheskih_privivok_b.jpg" />
       <span>Name: {name}</span>
       <span>Birth date: {birth.toLocaleDateString()}</span>
+      <span>Today is: {today.toLocaleDateString()}</span>
       <span>Age: {age < 0 ? 0 : age}</span>
-      <span>Masles - {calendar.masles}</span>
+
+      <div className="flex flex-col gap-y-2">
+        {Object.entries(calendar).map(([disease, isVaccinated]) => (
+          <span
+            className={`py-1 px-2 ${isVaccinated ? 'bg-green-100' : 'bg-gray-100'}`}
+          >
+            Vaccinated from <b>{disease}</b> – {isVaccinated ? 'Yes' : 'No'}{' '}
+          </span>
+        ))}
+      </div>
     </div>
   )
 }
