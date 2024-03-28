@@ -30,7 +30,7 @@ export default function () {
         {Object.entries(patients)
           .reverse()
           .map(([name, birthDate], index) => {
-            if (!search || name.includes(search))
+            if (!search || name.toLowerCase().includes(search.toLowerCase()))
               return (
                 <PatientCard name={name} birthDate={birthDate} key={index} />
               )
