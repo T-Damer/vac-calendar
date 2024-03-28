@@ -13,8 +13,9 @@ export default function ({ name }: { name: string }) {
   const today = new Date()
   const birth = new Date(birthDate)
 
-  const years = today.getFullYear() - birth.getFullYear()
-  const months = today.getMonth() - birth.getMonth()
+  const yearsWithMonths = daysFromBirth / 365
+  const years = Math.floor(yearsWithMonths)
+  const months = Math.floor((yearsWithMonths - years) * 12)
 
   const deleteEntry = useCallback(() => {
     if (!patientsData[name]) return
