@@ -10,8 +10,11 @@ export default function ({ name }: { name: string }) {
   const birthDate = patientsData[name]
   const { completedPercent, daysFromBirth } = calculateCompletedVacs(birthDate)
 
-  const today = new Date().toLocaleDateString()
-  const birth = new Date(birthDate).toLocaleDateString()
+  const today = new Date()
+  const birth = new Date(birthDate)
+
+  const years = today.getFullYear() - birth.getFullYear()
+  const months = today.getMonth() - birth.getMonth()
 
   const deleteEntry = useCallback(() => {
     if (!patientsData[name]) return
@@ -38,9 +41,11 @@ export default function ({ name }: { name: string }) {
       </div>
       <VacTable completedPercent={completedPercent} />
       <span>Name: {name}</span>
-      <span>Birth date: {birth}</span>
-      <span>Today is: {today}</span>
-      <span>Age: {daysFromBirth} days</span>
+      <span>Birth date: {birth.toLocaleDateString()}</span>
+      <span>Today is: {today.toLocaleDateString()}</span>
+      <span>
+        Age: {daysFromBirth} days ({years} years, {months} month(s))
+      </span>
     </div>
   )
 }
