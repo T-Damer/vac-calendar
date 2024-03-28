@@ -52,7 +52,7 @@ function AddPatientForm() {
           value={birthDate}
           onChange={(e) => setBirthDate(e.currentTarget.value)}
           type="date"
-          placeholder="Date"
+          placeholder="Birth Date"
           ref={dateInputRef}
           required
         />
