@@ -34,7 +34,7 @@ function AddPatientForm() {
   const disabled = useMemo(() => !fullName || !birthDate, [birthDate, fullName])
 
   return (
-    <div className="flex flex-col gap-2 text-black">
+    <div className="flex flex-col gap-2">
       <label className="input input-bordered flex items-center gap-2">
         <input
           type="text"
@@ -60,7 +60,7 @@ function AddPatientForm() {
       </label>
       <div className="flex w-full items-center justify-between">
         <button
-          className="btn transition-all disabled:opacity-70 hover:bg-red-300 border-0 w-28"
+          className="btn transition-all disabled:opacity-70 disabled:text-black hover:bg-red-300 border-0 w-28"
           onClick={clearData}
           disabled={!fullName && !birthDate}
         >
@@ -68,7 +68,7 @@ function AddPatientForm() {
         </button>
 
         <button
-          className="btn w-28 transition-all disabled:opacity-70 enabled:bg-green-700 enabled:border-0 enabled:text-white hover:enabled:bg-green-500"
+          className="btn w-28 transition-all disabled:opacity-70 disabled:text-black enabled:bg-green-700 enabled:border-0 enabled:text-white hover:enabled:bg-green-500"
           onClick={onSubmit}
           disabled={disabled}
         >
