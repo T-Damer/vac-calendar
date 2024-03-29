@@ -16,5 +16,5 @@ export default defineConfig({
     },
     outDir: 'dist',
   },
-  base: '/',
+  base: '/vac-calendar',
 })
