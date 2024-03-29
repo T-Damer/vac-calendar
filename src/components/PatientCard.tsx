@@ -5,7 +5,7 @@ import PatientData from 'types/PatientData'
 
 export default function ({ name, birthDate }: PatientData) {
   const onPress = useCallback(() => {
-    navigate(`/#/patient/${name}`)
+    navigate(`/patient/${name}`)
   }, [name])
 
   return (
