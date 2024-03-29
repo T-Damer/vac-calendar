@@ -18,11 +18,14 @@ export default function ({ name }: { name: string }) {
   const months = Math.floor((yearsWithMonths - years) * 12)
 
   const deleteEntry = useCallback(() => {
-    if (!patientsData[name]) return
+    if (!patientsData[name]) {
+      console.error('cant find the patient while deleting')
+      return
+    }
 
     delete patientsData[name]
 
-    navigate('/')
+    navigate('/vac-calendar')
     setPatientsData(patientsData)
   }, [name, patientsData, setPatientsData])
 
@@ -30,7 +33,7 @@ export default function ({ name }: { name: string }) {
     <div className="flex flex-col gap-x-2">
       <div className="flex justify-between items-center">
         <a
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/vac-calendar')}
           className="cursor-pointer hover:opacity-50 transition-opacity"
         >
           ◄ Go back

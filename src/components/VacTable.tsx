@@ -10,7 +10,7 @@ export default function ({ completedPercent }: { completedPercent: number }) {
           transform: 'translate3d(0, 0, 0)',
         }}
       />
-      <img src="/calendar.png" className="relative z-1" />
+      <img src="/vac-calendar/calendar.png" className="relative z-1" />
     </div>
   )
 }
